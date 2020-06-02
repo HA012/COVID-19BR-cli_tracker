@@ -29,7 +29,7 @@ Ao utilizar o script, a usuária poderá:
 	* No_DE_ÓBITOS: número total de óbitos por COVID-19 confirmados no município   
 	* NOVOS_ÓBITOS: número de novos óbitos confirmados no município desde a última atualização
 	* MORTALIDADE: taxa de mortalidade por COVID-19 no município    
-	* POPULAÇÃO: população estimada em 2019   
+	* POPULAÇÃO: estimativa do número de habitantes no município em 2019   
 
 ## Dependências
 
