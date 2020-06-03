@@ -41,9 +41,9 @@ Basta digitar o seguinte comando no terminal para obter a tabela completa dos da
 
 >>$./covidbr
 
-(assumindo-se que a usuária encontra-se no mesmo diretório em que o script foi salvo)        
+(a usuária precisa estar no mesmo diretório em que o script foi salvo)        
 
-Na primeira vez em que o script é executado, ele realiza o download automático do [arquivo CSV](https://brasil.io/dataset/covid19/caso_full/?format=csv) disponível na página do Brasil.io. Após o arquivo ser salvo na pasta de Downloads da usuária, o seu conteúdo é formatado e impresso no terminal. Em todas as outras vezes em que o script é executado, a usuária terá acesso à data e horário da última atualização, podendo ou não optar por atualizar a base de dados novamente.
+Na primeira vez em que o script é executado, ele realiza o download automático do [arquivo CSV](https://brasil.io/dataset/covid19/caso_full/?format=csv) disponível no site do Brasil.io. Após o arquivo ser salvo na pasta de Downloads, o seu conteúdo é formatado e impresso no terminal. Em todas as outras vezes, a usuária terá acesso à data e horário da última atualização, podendo ou não optar por atualizar a base de dados novamente.
 
 Há duas formas de filtrar os dados a serem apresentados. A primeira delas envolve digitar o filtro imediatamente após o script:
 
@@ -55,7 +55,7 @@ Há duas formas de filtrar os dados a serem apresentados. A primeira delas envol
 
 >>$./covidbr sp
 
-A segunda forma consiste em executar o script sem argumentos e só então digitar o filtro. 
+A segunda forma consiste em executar o script sem argumentos e só então digitar o filtro (ver screenshot abaixo). 
 
 ## Screenshots
 
