@@ -1,4 +1,4 @@
-# COVID-19BR-cli_tracker
+#COVID-19BR-cli_tracker
 
 Bash script que atualiza, formata e imprime no terminal os dados relativos à distribuição de casos de COVID-19 por município brasileiro de acordo com a base de dados disponibilizada em [Brasil.io](https://brasil.io).
 
@@ -47,13 +47,15 @@ Na primeira vez em que o script é executado, ele realiza o download automático
 
 Há duas formas de filtrar os dados a serem apresentados. A primeira delas envolve digitar o filtro imediatamente após o script:
 
->>$./covidbr São Paulo
+```
+$./covidbr São Paulo
 
->>$./covidbr são paulo
+$./covidbr são paulo
 
->>$./covidbr SP
+$./covidbr SP
 
->>$./covidbr sp
+$./covidbr sp
+```
 
 A segunda forma consiste em executar o script sem argumentos e só então digitar o filtro (ver screenshot abaixo). 
 
