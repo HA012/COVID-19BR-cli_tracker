@@ -39,7 +39,9 @@ Ao utilizar o script, a usuária poderá:
 
 Basta digitar o seguinte comando no terminal para obter a tabela completa dos dados relativos à COVID-19 no Brasil: 
 
->>$./covidbr
+```
+$./covidbr
+```
 
 (a usuária precisa estar no mesmo diretório em que o script foi salvo)        
 
