@@ -38,7 +38,7 @@ function update-data {
 
 			DATE="$( date +"%d-%m-%Y %H:%M:%S" )"
 			echo
-			wget -O "$HOME/Downloads/covidbr" "https://brasil.io/dataset/covid19/caso_full/?place_type=city&format=csv"
+			wget -O "$HOME/Downloads/covidbr" "https://brasil.io/dataset/covid19/caso/?is_last=True&place_type=city&format=csv"
 			echo "$DATE" >> ""$HOME"/Downloads/covidbr"
 }
 
@@ -47,7 +47,6 @@ echo -e "O Brasil em dados libertos: Repositório de dados públicos disponibili
 echo -e "\nESPECIAL COVID-19 - Dados por Município"
 echo -e "\nGraças a uma força-tarefa de 40 voluntários que, diariamente, compilam boletins epidemiológicos das 27 Secretarias Estaduais de Saúde, disponibilizamos uma base de dados com a série histórica de casos e óbitos confirmados por município. Embora essenciais para o planejamento de políticas de contenção do novo coronavírus, os dados municipais não têm sido divulgados pelo Ministério da Saúde. Ainda como parte desse esforço contínuo de fornecer dados úteis relacionados à pandemia, disponibilizamos outras bases estruturadas, como população dos municípios afetados, óbitos suspeitos registrados em cartório etc."
 
-echo -e "\nURL: https://brasil.io/dataset/covid19/caso_full/?search=&epidemiological_week=&date=&order_for_place=&state=&city=&city_ibge_code=&place_type=city&last_available_date=&is_last=&is_repeated="
 if [ -e ""$HOME"/Downloads/covidbr" ]
 then
 	echo -e "\nÚltima atualização: "$( tail -1 ""$HOME"/Downloads/covidbr" )""  
