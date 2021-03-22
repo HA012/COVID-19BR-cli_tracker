@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 function print-data {
 
@@ -22,10 +22,10 @@ function print-data {
 	NCOL9=MORTALIDADE
 	COL10=estimated_population_2019
 	NCOL10=POPULAÇÃO
-	if [ -z "$1" ] 
+	if [ -z "$1" ]
 	then
 		echo -e "\nDigite um filtro ou pressione 'Enter' para obter a tabela completa"
-		read -p "Filtrar por: " FILTER 
+		read -p "Filtrar por: " FILTER
 	else
 		FILTER="$@"
 	fi
@@ -33,6 +33,7 @@ function print-data {
 	sed "s/\s/_/g;s/,,/,---,/g;s/,/ /g;s/$COL1/$NCOL1/g;s/$COL2/$NCOL2/g;s/$COL3/$NCOL3/g;s/$COL4/$NCOL4/g;s/$COL5/$NCOL5/g;s/$COL6/$NCOL6/g;s/$COL7/$NCOL7/g;s/$COL8/$NCOL8/g;s/$COL9/$NCOL9/g;s/$COL10/$NCOL10/g" ""$HOME"/Downloads/covidbr" | grep -E -i -e "week" -e "\b$FILTER\b" | awk '{print $2, $3, $4, $5, $8, $10, $11, $12, $13, $14 }' | column -t | less
 
 }
+
 
 function update-data {
 
@@ -49,10 +50,10 @@ echo -e "\nGraças a uma força-tarefa de 40 voluntários que, diariamente, comp
 
 if [ -e ""$HOME"/Downloads/covidbr" ]
 then
-	echo -e "\nÚltima atualização: "$( tail -1 ""$HOME"/Downloads/covidbr" )""  
+	echo -e "\nÚltima atualização: "$( tail -1 ""$HOME"/Downloads/covidbr" )""
 	echo -e "\nAtualizar base de dados?"
-	read -p "[S] Sim [N] Não [A] Abortar (default: 'N'): " A 
-	case "$A" in 
+	read -p "[S] Sim [N] Não [A] Abortar (default: 'N'): " A
+	case "$A" in
 		[sS])
 			update-data
 			print-data "$@"
